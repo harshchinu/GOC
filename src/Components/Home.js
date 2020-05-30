@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import Appbar from './Appbar'
-import Product from './Products/Products'
-import Grid from '@material-ui/core/Grid'
+import Appbar from './Appbar';
+import Grid from '@material-ui/core/Grid';
 import BuyerHome from './Buyers/BuyerHome';
 import SellerHome from './Sellers/SellerHome';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 
 
 
@@ -79,7 +73,7 @@ render() {
     const type = sessionStorage.type;
     let re=null;
     let re1=null;
-    if(type=='buyers'){
+    if(type==='buyers'){
         re=(<BuyerHome products={this.state.Product}/>)
         re1=(   <Grid>
             <h1> Search for product </h1>
@@ -87,7 +81,7 @@ render() {
 
        
         </Grid>)
-    }else if(type=='sellers'){
+    }else if(type==='sellers'){
         re=(<SellerHome />)
     }
 
